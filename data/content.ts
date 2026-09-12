@@ -8,6 +8,7 @@ export const candidate = {
   bio: 'Menuju perubahan Katongan yang lebih maju — dengan memperkuat ekonomi rakyat, membangun infrastruktur berkelanjutan, menjaga kelestarian lingkungan, serta memastikan pendidikan dan kesejahteraan bagi seluruh warga. Bersama kita wujudkan pemerintahan yang transparan dan pembangunan yang inklusif untuk Katongan yang mandiri dan sejahtera.',
   image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/calon%20lurah%20katongan-tO8o5yPEjCNBqNjlDjsN7aabELEp3U.jpg',
   phone: '+62812345678', // WhatsApp contact
+  number: 3, // Nomor urut calon
 }
 
 export const hero = {

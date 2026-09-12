@@ -29,9 +29,14 @@ export default function Page() {
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 md:order-1 flex flex-col items-start text-left animate-fade-in-up">
-            <div className="inline-flex items-center gap-3 mb-6">
-              <span className="w-8 h-px bg-accent"></span>
-              <span className="text-xs font-bold tracking-widest text-accent uppercase">Calon Lurah Katongan 2026</span>
+            <div className="inline-flex items-center gap-4 mb-8">
+              <div className="relative flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-emerald-800 text-white font-serif text-3xl font-bold shadow-xl shadow-primary/20 border-4 border-white">
+                {candidate.number}
+              </div>
+              <div className="flex flex-col justify-center">
+                <span className="text-xs font-bold tracking-widest text-accent uppercase mb-0.5">Calon Lurah Katongan 2026</span>
+                <span className="text-sm font-medium text-muted-foreground">Kandidat Pilihan Kita</span>
+              </div>
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-foreground leading-[1.1] mb-6">
               Membangun Katongan <br />
