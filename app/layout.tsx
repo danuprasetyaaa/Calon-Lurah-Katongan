@@ -13,7 +13,6 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'id_ID',
   },
-  icons: { icon: '/icon.svg', apple: '/apple-icon.png' },
 }
 
 export const viewport: Viewport = { colorScheme: 'light', themeColor: '#f7f3ec', width: 'device-width', initialScale: 1 }
