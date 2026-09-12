@@ -69,7 +69,7 @@ export default function Page() {
             <span className="text-xs font-bold tracking-widest text-accent uppercase">Visi Utama</span>
             <span className="w-8 h-px bg-accent"></span>
           </div>
-          <TextEffect trigger={isVisiInView} delay={0.2} as="h2" per="char" preset="blur" className="text-3xl md:text-5xl lg:text-6xl font-serif leading-tight mb-12">
+          <TextEffect trigger={isVisiInView} delay={0.2} as="h2" per="word" preset="blur" className="text-2xl md:text-4xl lg:text-5xl font-serif leading-tight mb-12">
             {`"${vision.description}"`}
           </TextEffect>
           <div className="w-16 h-1 bg-accent mx-auto mb-6 rounded-full"></div>
