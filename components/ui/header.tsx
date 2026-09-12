@@ -61,9 +61,6 @@ export function Header() {
 							{link.label}
 						</a>
 					))}
-					<a href="https://wa.me/62812345678" className={buttonVariants({ variant: 'default', className: 'rounded-full ml-2' })}>
-						Hubungi Kami
-					</a>
 				</div>
 				<Button size="icon" variant="ghost" onClick={() => setOpen(!open)} className="md:hidden p-2">
 					<MenuToggleIcon open={open} className="size-6" duration={300} />
@@ -97,11 +94,6 @@ export function Header() {
 								{link.label}
 							</a>
 						))}
-					</div>
-					<div className="flex flex-col gap-4 mt-6">
-						<a href="https://wa.me/62812345678" className={buttonVariants({ variant: 'default', className: 'w-full h-12 text-lg rounded-full' })}>
-							Hubungi Kami
-						</a>
 					</div>
 				</div>
 			</div>

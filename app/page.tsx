@@ -17,7 +17,7 @@ export default function Page() {
   const isVisiInView = useInView(visiRef, { once: true, amount: 0.2 })
 
   return (
-    <main className="min-h-screen bg-background overflow-hidden selection:bg-primary/20 selection:text-primary">
+    <main className="min-h-screen bg-background overflow-x-clip selection:bg-primary/20 selection:text-primary">
       {/* HEADER / NAVBAR */}
       <Header />
 
