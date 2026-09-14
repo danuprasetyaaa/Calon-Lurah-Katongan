@@ -36,7 +36,7 @@ export const missions = [
   {
     id: 3,
     title: 'Bidang Pembinaan Kemasyarakatan Kalurahan',
-    description: 'a. Pelestarian tradisi adat dan budaya <br/> b. Pemberdayaan pelaku seni dan budaya. <br/> c. Pemberdayaan Karangtaruna',
+    description: 'a. Pelestarian tradisi adat dan budaya <br/> b. Pemberdayaan pelaku seni dan budaya <br/> c. Pemberdayaan Karangtaruna',
     icon: 'UsersRound',
   },
   {
