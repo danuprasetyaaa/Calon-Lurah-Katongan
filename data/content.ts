@@ -42,7 +42,7 @@ export const missions = [
   {
     id: 4,
     title: 'Bidang Pemberdayaan Masyarakat',
-    description: 'a. Pemberdayaan lembaga-lembaga kalurahan <br/> b. Pemberian stimulant/bantuan bagi masyarakat kurang/tidak mampu',
+    description: 'a. Pemberdayaan lembaga-lembaga kalurahan <br/> b. Pemberian stimulant / bantuan bagi masyarakat kurang / tidak mampu',
     icon: 'HandCoins',
   },
 ]
