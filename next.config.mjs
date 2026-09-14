@@ -1,13 +1,15 @@
-/** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production'
+const isGitHubPages = process.env.GITHUB_ACTIONS === 'true'
 
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/Calon-Lurah-Katongan' : '',
-  assetPrefix: isProd ? '/Calon-Lurah-Katongan' : '',
+
+  basePath: isGitHubPages ? '/Calon-Lurah-Katongan' : '',
+  assetPrefix: isGitHubPages ? '/Calon-Lurah-Katongan' : '',
+
   typescript: {
     ignoreBuildErrors: true,
   },
+
   images: {
     unoptimized: true,
   },
