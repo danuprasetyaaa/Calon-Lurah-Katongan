@@ -72,3 +72,130 @@ button, a { -webkit-tap-highlight-color: transparent; }
   to { opacity: 1; transform: translateY(0); }
 }
 
+@media (max-width: 767px) {
+  .mission-card {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 1.1rem 1rem 1rem;
+    border-radius: 22px;
+    box-shadow: 0 12px 28px -22px rgba(15, 23, 42, 0.38);
+    border-color: rgba(15, 23, 42, 0.08);
+  }
+
+  .mission-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 16px;
+  }
+
+  .mission-number {
+    font-size: 2.25rem;
+    line-height: 1;
+  }
+
+  .mission-title {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .mission-point {
+    gap: 0.7rem;
+    padding: 0.7rem 0.75rem;
+    border-radius: 14px;
+  }
+
+  .mission-point-badge {
+    width: 1.5rem;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+  }
+
+  .mission-point-text {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}
+
+@media (hover: none) {
+  .mission-card {
+    border-color: rgba(15, 23, 42, 0.08);
+    box-shadow: 0 12px 28px -22px rgba(15, 23, 42, 0.38);
+    transform: none;
+  }
+
+  .mission-card:active {
+    transform: scale(0.995);
+    box-shadow: 0 10px 24px -20px rgba(15, 23, 42, 0.42);
+    border-color: rgba(16, 185, 129, 0.18);
+  }
+
+  .mission-icon {
+    background: rgba(6, 95, 70, 0.06);
+    color: var(--primary);
+    transform: none;
+    box-shadow: none;
+  }
+
+  .mission-card:active .mission-icon {
+    background: rgba(6, 95, 70, 0.1);
+    transform: scale(1.02);
+  }
+
+  .mission-number {
+    color: rgba(15, 23, 42, 0.9);
+    transform: none;
+    text-shadow: none;
+  }
+
+  .mission-card:active .mission-number {
+    color: var(--primary);
+    transform: translateY(-1px);
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+  }
+
+  .mission-title {
+    color: var(--foreground);
+  }
+
+  .mission-card:active .mission-title {
+    color: var(--primary);
+  }
+
+  .mission-point {
+    border-color: rgba(15, 23, 42, 0.08);
+    background: rgba(248, 250, 252, 0.9);
+    box-shadow: none;
+  }
+
+  .mission-card:active .mission-point {
+    border-color: rgba(16, 185, 129, 0.18);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 18px -18px rgba(15, 23, 42, 0.6);
+  }
+
+  .mission-point-badge {
+    background: rgba(6, 95, 70, 0.08);
+    color: var(--primary);
+    transform: none;
+    box-shadow: none;
+  }
+
+  .mission-card:active .mission-point-badge {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-1px) scale(1.04);
+    box-shadow: 0 8px 16px -12px rgba(6, 95, 70, 0.8);
+  }
+
+  .mission-point-text {
+    color: rgba(15, 23, 42, 0.82);
+  }
+
+  .mission-card:active .mission-point-text {
+    color: var(--foreground);
+  }
+}
+
+
