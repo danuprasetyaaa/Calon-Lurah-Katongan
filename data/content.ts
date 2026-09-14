@@ -5,7 +5,7 @@ export const candidate = {
   name: 'Wasiyat',
   title: 'Pemimpin Perubahan untuk Katongan',
   tagline: 'Bersama Membangun Katongan yang Lebih Baik',
-  bio: 'Menuju perubahan Katongan yang lebih maju — dengan memperkuat ekonomi rakyat, membangun infrastruktur berkelanjutan, menjaga kelestarian lingkungan, serta memastikan pendidikan dan kesejahteraan bagi seluruh warga. Bersama kita wujudkan pemerintahan yang transparan dan pembangunan yang inklusif untuk Katongan yang mandiri dan sejahtera.',
+  bio: 'Upaya mewujudkan pemerintahan yang bersih, transparan dan akuntable (sesuai program) serta peningkatan kesejahteraan masyarakat melalui berbagai program pembangunan, pemberdayaan dan gotong royong.',
   image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/calon%20lurah%20katongan-tO8o5yPEjCNBqNjlDjsN7aabELEp3U.jpg',
   phone: '+62812345678', // WhatsApp contact
   number: 3, // Nomor urut calon
