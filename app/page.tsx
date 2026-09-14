@@ -2,14 +2,44 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { ArrowRight, Check, Heart, TrendingUp, Building2, Leaf, BookOpen, Users, Accessibility, ExternalLink } from 'lucide-react'
+import { ArrowRight, Check, Heart, TrendingUp, Building2, Leaf, BookOpen, Users, Accessibility, ExternalLink, ShieldCheck, HardHat, UsersRound, HandCoins } from 'lucide-react'
 import { candidate, vision, missions, contact } from '@/data/content'
 import { Header } from '@/components/ui/header'
 import { TextEffect } from '@/components/ui/text-effect'
 
 // Map icon strings to actual Lucide components
 const iconMap: Record<string, React.ElementType> = {
-  Heart, TrendingUp, Building2, Leaf, BookOpen, Users, Accessibility
+  Heart, TrendingUp, Building2, Leaf, BookOpen, Users, Accessibility, ShieldCheck, HardHat, UsersRound, HandCoins
+}
+
+const parseMissionPoints = (description: string) => {
+  const normalized = description
+    .replace(/<br\s*\/?>/gi, ' | ')
+    .replace(/\s*;\s*/gi, ' | ')
+    .replace(/\s*\|\s*/g, ' | ')
+    .trim()
+
+  const segments = normalized
+    .split(/\s*\|\s*|\s*(?=[a-d]\s*\.)/i)
+    .map((segment) => segment.trim())
+    .filter(Boolean)
+
+  if (segments.length > 0) {
+    return segments
+      .map((segment) => {
+        const match = segment.match(/^([a-d])\s*\.\s*(.*)$/i)
+        if (!match) {
+          const trimmed = segment.trim()
+          return trimmed ? { label: '•', text: trimmed } : null
+        }
+
+        const text = match[2].trim()
+        return text ? { label: match[1].toUpperCase(), text } : null
+      })
+      .filter((item): item is { label: string; text: string } => Boolean(item))
+  }
+
+  return normalized ? [{ label: '•', text: normalized }] : []
 }
 
 export default function Page() {
@@ -97,6 +127,8 @@ export default function Page() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {missions.map((mission, idx) => {
               const IconComp = iconMap[mission.icon || 'Check'] || Check;
+              const points = parseMissionPoints(mission.description)
+
               return (
                 <motion.div
                   key={mission.id}
@@ -104,16 +136,27 @@ export default function Page() {
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.5, delay: idx * 0.1, ease: 'easeOut' }}
-                  className="group bg-white p-8 rounded-2xl shadow-sm border border-border/50 hover:shadow-xl hover:border-primary/20 transition-all duration-300 hover:-translate-y-2 flex flex-col"
+                  className="group relative flex flex-col rounded-[28px] border border-border/60 bg-gradient-to-br from-white via-white to-slate-50 p-7 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.35)] transition-all duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-[0_24px_60px_-26px_rgba(16,185,129,0.35)]"
                 >
-                  <div className="flex items-start justify-between mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                  <div className="mb-6 flex items-start justify-between gap-3">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:shadow-lg group-hover:shadow-primary/20">
                       <IconComp size={24} />
                     </div>
-                    <span className="text-4xl font-serif text-border font-bold group-hover:text-primary/20 transition-colors duration-300">{String(mission.id).padStart(2, '0')}</span>
+                    <span className="relative text-4xl font-serif font-bold text-border transition-all duration-300 group-hover:-translate-y-1 group-hover:text-primary group-hover:drop-shadow-[0_0_14px_rgba(16,185,129,0.45)]">{String(mission.id).padStart(2, '0')}</span>
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">{mission.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed flex-grow">{mission.description}</p>
+
+                  <h3 className="mb-4 text-xl font-bold text-foreground transition-colors duration-300 group-hover:text-primary">{mission.title}</h3>
+
+                  <ul className="space-y-3 text-sm leading-relaxed text-muted-foreground">
+                    {points.map((point) => (
+                      <li key={`${mission.id}-${point.label}`} className="group/item flex items-start gap-3 rounded-xl border border-slate-200/80 bg-slate-50/80 px-3 py-2.5 transition-all duration-300 hover:border-primary/30 hover:bg-white hover:shadow-[0_8px_20px_-18px_rgba(15,23,42,0.6)]">
+                        <span className="relative mt-0.5 inline-flex h-6 min-w-6 items-center justify-center rounded-full bg-primary/10 px-1.5 text-[10px] font-bold tracking-[0.12em] text-primary transition-all duration-300 group-hover/item:scale-110 group-hover/item:bg-primary group-hover/item:text-white group-hover/item:shadow-md group-hover/item:shadow-primary/20 group-hover/item:-translate-y-0.5 z-10">
+                          {point.label}
+                        </span>
+                        <span className="flex-1 transition-colors duration-300 group-hover/item:text-foreground">{point.text}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </motion.div>
               );
             })}
