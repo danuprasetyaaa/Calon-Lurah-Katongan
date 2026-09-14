@@ -1,14 +1,11 @@
-// Editable campaign content for Calon Lurah Katongan 2026
-// Replace placeholders with actual candidate and campaign information
-
 export const candidate = {
   name: 'Wasiyat',
-  title: 'Pemimpin Perubahan untuk Katongan',
-  tagline: 'Bersama Membangun Katongan yang Lebih Baik',
-  bio: 'Upaya mewujudkan pemerintahan yang bersih, transparan dan akuntable (sesuai program) serta peningkatan kesejahteraan masyarakat melalui berbagai program pembangunan, pemberdayaan dan gotong royong.',
+  title: 'Calon Lurah Katongan 2026',
+  tagline: 'Visi dan Misi untuk Katongan yang Mandiri, Berbudaya, dan Sejahtera',
+  bio: 'Jika saya terpilih menjadi Lurah Katongan pada pemilihan lurah tahun 2026, visi dan misi saya adalah mewujudkan kalurahan yang mandiri, berbudaya, maju, pelayanan prima, dan pembangunan berkelanjutan dengan pemerintahan yang bersih, transparan, akuntabel, serta kesejahteraan masyarakat yang meningkat.',
   image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/calon%20lurah%20katongan-tO8o5yPEjCNBqNjlDjsN7aabELEp3U.jpg',
-  phone: '+62812345678', // WhatsApp contact
-  number: 3, // Nomor urut calon
+  phone: '+62812345678', 
+  number: 3, 
 }
 
 export const hero = {
@@ -26,45 +23,27 @@ export const vision = {
 export const missions = [
   {
     id: 1,
-    title: 'Kesejahteraan Masyarakat',
-    description: 'Meningkatkan taraf hidup dan akses pelayanan kesehatan serta pendidikan bagi seluruh warga masyarakat Katongan.',
-    icon: 'Heart',
+    title: 'Bidang Penyelenggaraan Pemerintahan',
+    description: 'a. Adanya transparansi dalam segala hal, bersih dari KKN. <br/> b. Mengutamakan pelayanan masyarakat / pelayanan prima. <br/> c. Peningkatan operasional RT/RW.',
+    icon: 'ShieldCheck',
   },
   {
     id: 2,
-    title: 'Pemberdayaan Ekonomi',
-    description: 'Mengembangkan usaha mikro, kecil, dan menengah serta sektor pertanian untuk menciptakan lapangan kerja baru.',
-    icon: 'TrendingUp',
+    title: 'Bidang Pelaksanaan Pembangunan Kalurahan',
+    description: 'a. Pemerataan Infrastruktur. <br/> b. Peningkatan Ketahanan Pangan.',
+    icon: 'HardHat',
   },
   {
     id: 3,
-    title: 'Infrastruktur Berkelanjutan',
-    description: 'Membangun dan merawat jalan, irigasi, dan fasilitas publik dengan mempertimbangkan keberlanjutan lingkungan.',
-    icon: 'Building2',
+    title: 'Bidang Pembinaan Kemasyarakatan Kalurahan',
+    description: 'a. Pelestarian tradisi adat dan budaya. <br/> b. Pemberdayaan pelaku seni dan budaya. <br/> c. Pemberdayaan Karangtaruna.',
+    icon: 'UsersRound',
   },
   {
     id: 4,
-    title: 'Pelestarian Lingkungan',
-    description: 'Mengelola sumber daya alam secara bijak dan mengurangi dampak lingkungan untuk generasi mendatang.',
-    icon: 'Leaf',
-  },
-  {
-    id: 5,
-    title: 'Edukasi dan Budaya',
-    description: 'Mendukung pengembangan pendidikan berkualitas dan melestarikan nilai-nilai budaya lokal yang kaya.',
-    icon: 'BookOpen',
-  },
-  {
-    id: 6,
-    title: 'Tata Kelola Pemerintahan',
-    description: 'Membangun pemerintahan yang transparan, akuntabel, dan responsif terhadap kebutuhan masyarakat.',
-    icon: 'Users',
-  },
-  {
-    id: 7,
-    title: 'Pembangunan Inklusif',
-    description: 'Memastikan setiap anggota masyarakat, khususnya kelompok rentan, mendapat manfaat dari pembangunan.',
-    icon: 'Accessibility',
+    title: 'Bidang Pemberdayaan Masyarakat',
+    description: 'a. Pemberdayaan lembaga-lembaga kalurahan. <br/> b. Pemberian stimulant/bantuan bagi masyarakat kurang/tidak mampu.',
+    icon: 'HandCoins',
   },
 ]
 
