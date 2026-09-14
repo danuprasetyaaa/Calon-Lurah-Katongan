@@ -20,7 +20,7 @@ export const hero = {
 
 export const vision = {
   title: 'Visi Kami',
-  description: 'Kalurahan Katongan yang maju, mandiri, dan sejahtera dengan masyarakat yang berdaya, lingkungan yang terjaga, dan tata pemerintahan yang baik.',
+  description: 'Terwujudnya kalurahan yang mandiri, berbudaya, maju, pelayanan prima dan pembangunan berkelanjutan.',
 }
 
 export const missions = [
