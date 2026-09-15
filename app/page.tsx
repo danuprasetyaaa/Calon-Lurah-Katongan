@@ -115,10 +115,11 @@ export default function Page() {
       {/* MISSION SECTION */}
       <section id="misi" className="py-24 md:py-32 bg-muted/50 pb-32 md:pb-48">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="max-w-2xl mb-16 md:mb-24">
-            <div className="inline-flex items-center gap-3 mb-4">
-              <span className="w-8 h-px bg-accent"></span>
+          <div className="max-w-2xl mx-auto mb-10 md:mb-14 text-center">
+            <div className="inline-flex items-center justify-center gap-4">
+              <span className="w-10 h-px bg-accent"></span>
               <span className="text-3xl md:text-4xl font-serif font-bold tracking-tight text-foreground">Misi Kami</span>
+              <span className="w-10 h-px bg-accent"></span>
             </div>
           </div>
 
