@@ -8,13 +8,6 @@ export const candidate = {
   number: 3, 
 }
 
-export const hero = {
-  headline: 'Visi Katongan 2026',
-  subheadline: 'Kalurahan yang Mandiri, Sejahtera, dan Berkelanjutan',
-  cta: 'Bergabunglah dengan Gerakan Perubahan',
-  backgroundImage: '/campaign-hero.png',
-}
-
 export const vision = {
   title: 'Visi Kami',
   description: 'Terwujudnya kalurahan yang mandiri, berbudaya, maju, pelayanan prima dan pembangunan berkelanjutan.',
