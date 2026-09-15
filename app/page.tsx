@@ -118,7 +118,7 @@ export default function Page() {
           <div className="max-w-2xl mb-16 md:mb-24">
             <div className="inline-flex items-center gap-3 mb-4">
               <span className="w-8 h-px bg-accent"></span>
-              <span className="text-lg md:text-xl font-serif font-semibold tracking-wide text-accent">Misi Kami</span>
+              <span className="text-3xl md:text-4xl font-serif font-bold tracking-tight text-foreground">Misi Kami</span>
             </div>
           </div>
 
