@@ -120,8 +120,6 @@ export default function Page() {
               <span className="w-8 h-px bg-accent"></span>
               <span className="text-xs font-bold tracking-widest text-accent uppercase">Misi Kami</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-serif text-foreground mb-6">Langkah Nyata untuk Katongan.</h2>
-            <p className="text-lg text-muted-foreground">Tujuh komitmen utama untuk mewujudkan visi bersama, dengan pendekatan kerja yang transparan, inovatif, dan berpihak penuh pada masyarakat.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
